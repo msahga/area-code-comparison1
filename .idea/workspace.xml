@@ -7,21 +7,15 @@
     <list default="true" id="436e8b47-3328-4a65-b801-d51d5ca0f8bf" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/area-code-comparison.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/area-code-comparison.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/AreaCodeComparisonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/AreaCodeComparisonApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/ComparisonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/ComparisonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/DatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/ExcelOutputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/ExcelOutputService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/ExcelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/ExcelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/service/RealTimeAreaCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/RealTimeAreaCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/AreaCodeComparisonApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ComparisonService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/DatabaseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ExcelOutputService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ExcelService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/ExcelService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/service/RealTimeAreaCodeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/区域代码对比结果_20250707_223327.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/区域代码对比结果_20250709_101409.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/AreaCodeComparisonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/AreaCodeComparisonApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/ComparisonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/ComparisonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/RealTimeAreaCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/RealTimeAreaCodeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/AreaCodeComparisonApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/AreaCodeComparisonApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/ComparisonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/ComparisonService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/DatabaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/DatabaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/RealTimeAreaCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/RealTimeAreaCodeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/数据库导出结果.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/数据库导出结果.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,37 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/test1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;问题&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;应用程序.AreaCodeComparison.executor&quot;: &quot;Debug&quot;,
-    &quot;应用程序.AreaCodeComparisonApp.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.AreaCodeUpdateApp.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.com.example.comparison.AreaCodeComparisonApp.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.com.example.update.AreaCodeUpdateApp.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/test1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "问题",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "vue.rearranger.settings.migration": "true",
+    "应用程序.AreaCodeComparison.executor": "Debug",
+    "应用程序.AreaCodeComparisonApp.executor": "Run",
+    "应用程序.AreaCodeUpdateApp.executor": "Run",
+    "应用程序.com.example.comparison.AreaCodeComparisonApp.executor": "Run",
+    "应用程序.com.example.update.AreaCodeUpdateApp.executor": "Debug"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\test1\src\main\java\com\example\update" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.com.example.update.AreaCodeUpdateApp">
+  <component name="RunManager" selected="应用程序.com.example.comparison.AreaCodeComparisonApp">
     <configuration name="AreaCodeComparisonApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.AreaCodeComparisonApp" />
       <module name="area-code-import" />
@@ -132,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.com.example.update.AreaCodeUpdateApp" />
         <item itemvalue="应用程序.com.example.comparison.AreaCodeComparisonApp" />
+        <item itemvalue="应用程序.com.example.update.AreaCodeUpdateApp" />
         <item itemvalue="应用程序.AreaCodeComparisonApp" />
         <item itemvalue="应用程序.AreaCodeUpdateApp" />
       </list>
@@ -159,7 +153,7 @@
       <workItem from="1752024263069" duration="3497000" />
       <workItem from="1752041611785" duration="2225000" />
       <workItem from="1752109011692" duration="4825000" />
-      <workItem from="1752115428462" duration="697000" />
+      <workItem from="1752115428462" duration="7238000" />
     </task>
     <servers />
   </component>
@@ -173,6 +167,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/example/AreaCodeComparison.java</url>
           <line>215</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/comparison/RealTimeAreaCodeService.java</url>
+          <line>129</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

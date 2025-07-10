@@ -229,27 +229,58 @@ public class RealTimeAreaCodeService {
     }
     
     /**
-     * 批量获取实时行政区域代码
-     * @param areaNames 区域名称列表
-     * @return 区域名称到区域代码的映射
+     * 通用批量获取实时行政区域代码
+     * @param areaInfoList 需要查询的区域信息列表（包含区域名和区域代码）
+     * @return 区域信息到区域代码的映射
      */
-    public java.util.Map<String, String> getRealTimeAreaCodes(java.util.List<String> areaNames) {
-        java.util.Map<String, String> result = new java.util.HashMap<>();
-        
-        for (String areaName : areaNames) {
-            String areaCode = getRealTimeAreaCode(areaName, null);
+    public java.util.Map<AreaInfo, String> getRealTimeAreaCodes(java.util.List<AreaInfo> areaInfoList) {
+        java.util.Map<AreaInfo, String> result = new java.util.HashMap<>();
+        for (AreaInfo info : areaInfoList) {
+            String areaCode = getRealTimeAreaCode(info.getAreaName(), info.getAreaCode());
             if (areaCode != null) {
-                result.put(areaName, areaCode);
+                result.put(info, areaCode);
             }
             // 添加延迟避免API限制
             try {
-                Thread.sleep(100);
+                Thread.sleep(1000); // 每秒最多1次请求
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
                 break;
             }
         }
-        
         return result;
+    }
+
+    /**
+     * 区域信息数据结构，便于扩展
+     */
+    public static class AreaInfo {
+        private String areaName;
+        private String areaCode;
+        public AreaInfo(String areaName, String areaCode) {
+            this.areaName = areaName;
+            this.areaCode = areaCode;
+        }
+        public String getAreaName() { return areaName; }
+        public String getAreaCode() { return areaCode; }
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+            AreaInfo areaInfo = (AreaInfo) o;
+            return java.util.Objects.equals(areaName, areaInfo.areaName) &&
+                   java.util.Objects.equals(areaCode, areaInfo.areaCode);
+        }
+        @Override
+        public int hashCode() {
+            return java.util.Objects.hash(areaName, areaCode);
+        }
+        @Override
+        public String toString() {
+            return "AreaInfo{" +
+                    "areaName='" + areaName + '\'' +
+                    ", areaCode='" + areaCode + '\'' +
+                    '}';
+        }
     }
 } 

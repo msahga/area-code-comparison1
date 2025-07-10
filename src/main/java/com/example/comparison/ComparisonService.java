@@ -41,8 +41,8 @@ public class ComparisonService {
             excelKeySet.add(excelKey);
             AreaCode matchedDbAreaCode = dbMap.get(excelKey);
 
-            // 调用新版方法，传入D列名称和区域代码
-            String realTimeCode = getRealTimeAreaCode(excelAreaCode.getAreaName(), excelAreaCode.getAreaCode());
+            // 移除高德API调用，不再查实时行政区划代码
+            // String realTimeCode = getRealTimeAreaCode(excelAreaCode.getAreaName(), excelAreaCode.getAreaCode());
 
             if (matchedDbAreaCode != null) {
                 // 完全匹配
@@ -55,7 +55,7 @@ public class ComparisonService {
                 result.setMatch(true);
                 result.setMatchStatus("匹配");
                 result.setRemark("数据库和Excel数据完全一致");
-                result.setRealTimeAreaCode(realTimeCode); // 放入G列
+                result.setRealTimeAreaCode(""); // G列留空
                 results.add(result);
                 matchedDbKeys.add(excelKey);
             } else {
@@ -76,7 +76,7 @@ public class ComparisonService {
                             result.setMatch(false);
                             result.setMatchStatus("区域代码错误");
                             result.setRemark("区域名称相同但区域代码不一致，请人工核查");
-                            result.setRealTimeAreaCode(realTimeCode); // 放入G列
+                            result.setRealTimeAreaCode(""); // G列留空
                             results.add(result);
                             matchedDbKeys.add(getComparisonKey(dbArea));
                             codeError = true;
@@ -94,7 +94,7 @@ public class ComparisonService {
                     result.setMatch(false);
                     result.setMatchStatus("不匹配");
                     result.setRemark("在数据库中未找到对应的区域代码");
-                    result.setRealTimeAreaCode(realTimeCode); // 放入G列
+                    result.setRealTimeAreaCode(""); // G列留空
                     results.add(result);
                 }
             }

@@ -46,6 +46,31 @@ public class AreaCodeComparisonApp {
             logger.info("正在执行数据对比...");
             List<ComparisonResult> comparisonResults = comparisonService.compareAreaCodes(dbAreaCodes, excelAreaCodes);
 
+            // 新增：只筛选“区域代码错误”的行，批量查高德API
+            List<RealTimeAreaCodeService.AreaInfo> errorList = new java.util.ArrayList<>();
+            for (ComparisonResult result : comparisonResults) {
+                if ("区域代码错误".equals(result.getMatchStatus())) {
+                    errorList.add(new RealTimeAreaCodeService.AreaInfo(result.getExcelAreaName(), result.getExcelAreaCode()));
+                }
+            }
+            if (!errorList.isEmpty()) {
+                RealTimeAreaCodeService realTimeAreaCodeService = new RealTimeAreaCodeService();
+                java.util.Map<RealTimeAreaCodeService.AreaInfo, String> realTimeMap = realTimeAreaCodeService.getRealTimeAreaCodes(errorList);
+                // 写回ComparisonResult的realTimeAreaCode字段，并自动更新数据库
+                for (ComparisonResult result : comparisonResults) {
+                    if ("区域代码错误".equals(result.getMatchStatus())) {
+                        RealTimeAreaCodeService.AreaInfo info = new RealTimeAreaCodeService.AreaInfo(result.getExcelAreaName(), result.getExcelAreaCode());
+                        String realCode = realTimeMap.get(info);
+                        if (realCode != null) {
+                            result.setRealTimeAreaCode(realCode);
+                            // 自动更新数据库
+                            databaseService.updateAreaCodeByAreaName(result.getExcelAreaName(), realCode);
+                            logger.info("已将 {} 的区域代码更新为 {}（写入数据库）", result.getExcelAreaName(), realCode);
+                        }
+                    }
+                }
+            }
+
             // 4. 生成统计信息
             comparisonService.generateStatistics(comparisonResults);
 

@@ -99,4 +99,24 @@ public class DatabaseService {
             DatabaseConfig.closeConnection(connection);
         }
     }
+
+    /**
+     * 根据区域名称更新区域代码
+     */
+    public void updateAreaCodeByAreaName(String areaName, String newAreaCode) {
+        String sql = "UPDATE wms_area_code SET area_code = ? WHERE area_name = ?";
+        try (java.sql.Connection conn = DatabaseConfig.getConnection();
+             java.sql.PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, newAreaCode);
+            ps.setString(2, areaName);
+            int rows = ps.executeUpdate();
+            if (rows > 0) {
+                System.out.println("已更新 " + areaName + " 的区域代码为 " + newAreaCode);
+            } else {
+                System.out.println("未找到需要更新的区域名称：" + areaName);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 } 
