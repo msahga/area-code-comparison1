@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="436e8b47-3328-4a65-b801-d51d5ca0f8bf" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/area-code-comparison.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/area-code-comparison.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/AreaCodeComparisonApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/AreaCodeComparisonApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/ComparisonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/ComparisonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/DatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/comparison/RealTimeAreaCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/comparison/RealTimeAreaCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/AreaCodeComparisonApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/AreaCodeComparisonApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/ComparisonService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/ComparisonService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/DatabaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/DatabaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/comparison/RealTimeAreaCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/comparison/RealTimeAreaCodeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/数据库导出结果.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/数据库导出结果.xlsx" afterDir="false" />
-    </list>
+    <list default="true" id="436e8b47-3328-4a65-b801-d51d5ca0f8bf" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +141,7 @@
       <workItem from="1752024263069" duration="3497000" />
       <workItem from="1752041611785" duration="2225000" />
       <workItem from="1752109011692" duration="4825000" />
-      <workItem from="1752115428462" duration="7238000" />
+      <workItem from="1752115428462" duration="8030000" />
     </task>
     <servers />
   </component>
